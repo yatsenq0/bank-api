@@ -1,0 +1,45 @@
+xml version=1.0 encoding=UTF-8
+project xmlns=httpmaven.apache.orgPOM4.0.0
+         xmlnsxsi=httpwww.w3.org2001XMLSchema-instance
+         xsischemaLocation=httpmaven.apache.orgPOM4.0.0 httpmaven.apache.orgxsdmaven-4.0.0.xsd
+    modelVersion4.0.0modelVersion
+
+    groupIdcom.examplegroupId
+    artifactIdbank-apiartifactId
+    version1.0-SNAPSHOTversion
+
+    parent
+        groupIdorg.springframework.bootgroupId
+        artifactIdspring-boot-starter-parentartifactId
+        version3.1.4version
+        relativePath
+    parent
+
+    dependencies
+        !-- Spring Boot --
+        dependency
+            groupIdorg.springframework.bootgroupId
+            artifactIdspring-boot-starter-webartifactId
+        dependency
+        dependency
+            groupIdorg.springframework.bootgroupId
+            artifactIdspring-boot-starter-data-jpaartifactId
+        dependency
+
+        !-- PostgreSQL --
+        dependency
+            groupIdorg.postgresqlgroupId
+            artifactIdpostgresqlartifactId
+            scoperuntimescope
+        dependency
+    dependencies
+
+    build
+        plugins
+            plugin
+                groupIdorg.springframework.bootgroupId
+                artifactIdspring-boot-maven-pluginartifactId
+            plugin
+        plugins
+    build
+project
